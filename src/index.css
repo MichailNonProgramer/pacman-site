@@ -245,22 +245,23 @@ body {
 
 .ghost-pacman-right, .ghost-pacman-left {
   position: absolute;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
 
 .ghost-pacman-right img,
 .ghost-pacman-left img {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
 
 .ghost-pacman-right{
-  right: 0;
+  right: 1%;
   top: 35%
 }
 
 .ghost-pacman-left {
+  left: 1%;
   top: 35%
 }
 
@@ -312,4 +313,10 @@ body {
 .mail__footer a{
   text-decoration: none;
   color: yellow;
+}
+
+@media screen and (max-width: 1400px){
+  .ghost-pacman-img {
+    display: none;
+  }
 }
