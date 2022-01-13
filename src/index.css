@@ -25,6 +25,7 @@
   font-family: 'Permanent Marker', cursive;;
   color: yellow;
   width: 100%;
+  user-select: none;
 }
 
 .title:hover {
@@ -89,8 +90,8 @@
   user-select: none;
 }
 
-.inky__menu-content a, .pinky__menu-content a,
-.blinky__menu-content a, .clyde__menu-content a{
+.inky__menu-content .ghost__menu, .pinky__menu-content .ghost__menu,
+.blinky__menu-content .ghost__menu, .clyde__menu-content .ghost__menu{
   text-decoration: none;
   color: black;
   display: inline-block;
@@ -100,8 +101,8 @@
   font-weight: bold;
 }
 
-.inky__menu-content:hover a, .pinky__menu-content:hover a,
-.blinky__menu-content:hover a, .clyde__menu-content:hover a{
+.inky__menu-content:hover .ghost__menu, .pinky__menu-content:hover .ghost__menu,
+.blinky__menu-content:hover .ghost__menu, .clyde__menu-content:hover .ghost__menu{
   color: blue;
 }
 
@@ -110,8 +111,8 @@
 .image__inky, .image__pinky {
   position: relative;
   overflow: hidden;
-  height: 2vh;
-  width: 2vh;
+  height: 20px;
+  width: 20px;
   margin-left: auto;
   margin-right: auto;
 
@@ -119,9 +120,8 @@
 
 .image__blinky img, .image__clyde img,
 .image__inky img, .image__pinky img {
-  height: 2vh;
-  width: 2vh;
-  transform: scale(1.1);
+  height: 20px;
+  width: 20px;
 }
 
 .image__clyde img,
@@ -274,27 +274,29 @@ body {
   color: yellow;
   border: 1px solid blue;
   display: flex;
+  min-width: 400px;
 }
 
 .info {
   margin: auto auto;
+  overflow: hidden;
 }
 
-.info h2 {
+.info .header__main__content {
   text-align: center;
   font-family: 'Permanent Marker', cursive;
   font-weight: bolder;
-  overflow: auto;
   font-size: 36px;
+  overflow: hidden;
 }
 
-.info p {
+.info .text__main__content {
   text-align: center;
   font-family: 'Permanent Marker', cursive;
   font-weight: bolder;
-  overflow: auto;
   margin-top: 15px;
   font-size: 24px;
+  overflow: hidden;
 }
 
 .footer {
@@ -315,8 +317,25 @@ body {
   color: yellow;
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1400px) {
   .ghost-pacman-img {
     display: none;
+  }
+
+  .image__blinky, .image__clyde,
+  .image__inky, .image__pinky {
+    display: none;
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .clyde__ghost, .inky__ghost {
+    display: none;
+  }
+
+  .inky__menu-content .ghost__menu, .pinky__menu-content .ghost__menu,
+  .blinky__menu-content .ghost__menu, .clyde__menu-content .ghost__menu{
+    font-size: 12px;
   }
 }
