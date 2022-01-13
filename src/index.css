@@ -61,6 +61,21 @@
   border-radius: 10px;
 }
 
+.menu-content::-webkit-scrollbar {
+  width: 2px;
+}
+
+.menu-content::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.menu-content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background:  blue;
+}
+
 .menu-content > div {
   display: block;
   width: auto;
@@ -143,6 +158,7 @@
 body {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 * {
