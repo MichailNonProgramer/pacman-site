@@ -27,6 +27,10 @@
   width: 100%;
 }
 
+.title:hover {
+  color: blue;
+}
+
 .header-wrapper__header {
   flex-grow: 1;
   position: relative;
@@ -95,6 +99,12 @@
   font-family: 'Permanent Marker', cursive;;
   font-weight: bold;
 }
+
+.inky__menu-content:hover a, .pinky__menu-content:hover a,
+.blinky__menu-content:hover a, .clyde__menu-content:hover a{
+  color: blue;
+}
+
 
 .image__blinky, .image__clyde,
 .image__inky, .image__pinky {
