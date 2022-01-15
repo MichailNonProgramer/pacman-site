@@ -43,10 +43,9 @@
 .menu {
   cursor: pointer;
   background-color: yellow;
-  width: 100%;
+  width: 150px;
   height: 3vh;
   border-radius: 10px;
-  border: 4px double black;
   min-height: 25px;
   font-size: 20px;
   font-weight: bold;
@@ -58,12 +57,12 @@
 .menu-content{
   display: none;
   background-color: yellow;
-  width: 100%;
+  width: 150px;
   height: 6vw;
   overflow: auto;
   min-height: 60px;
   min-width: 150px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .menu-content::-webkit-scrollbar {
@@ -85,7 +84,7 @@
   display: block;
   width: auto;
   height: 3vw;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
   text-align: center;
   user-select: none;
 }
@@ -139,14 +138,15 @@
   display: flex;
   width: 30%;
   margin-left: 40vw;
+  overflow: hidden;
 }
 
 .input_block {
   width: 15vw;
-  height: 3vh;
-  border-radius:1vh;
+  height: 20px;
+  border-radius:15px;
   box-shadow:4px 4px 10px rgba(0,0,0,0.06);
-  min-height: 25px;
+  min-height: 10px;
   font-weight: bold;
   font-size: 12px;
   margin-top: 1vh;
@@ -154,10 +154,10 @@
 }
 
 .search__button {
-  height: 3vh;
+  height: 25px;
   width: 5vw;
-  border-radius: 10px;
-  min-height: 25px;
+  border-radius: 15px;
+  min-height: 10px;
   background-color: yellow;
   font-weight: bold;
   font-size: 18px;
@@ -275,6 +275,7 @@ body {
   border: 1px solid blue;
   display: flex;
   min-width: 400px;
+  overflow: scroll;
 }
 
 .info {
@@ -312,7 +313,7 @@ body {
   margin: auto auto;
 }
 
-.mail__footer a{
+.mail__footer .href__mail__footer{
   text-decoration: none;
   color: yellow;
 }
@@ -337,5 +338,17 @@ body {
   .inky__menu-content .ghost__menu, .pinky__menu-content .ghost__menu,
   .blinky__menu-content .ghost__menu, .clyde__menu-content .ghost__menu{
     font-size: 12px;
+  }
+
+
+  .search__header {
+    margin-left: 20vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main__content {
+   height: 400px;
+    width: 350px;
   }
 }
