@@ -23,7 +23,7 @@
   text-align: center;
   font-size: 32px;
   font-family: 'Permanent Marker', cursive;;
-  color: yellow;
+  color: #fecc00;
   width: 100%;
   user-select: none;
 }
@@ -42,7 +42,7 @@
 
 .menu {
   cursor: pointer;
-  background-color: yellow;
+  background-color: #fecc00;
   width: 150px;
   height: 3vh;
   border-radius: 10px;
@@ -56,7 +56,7 @@
 
 .menu-content{
   display: none;
-  background-color: yellow;
+  background-color: #fecc00;
   width: 150px;
   height: 6vw;
   overflow: auto;
@@ -164,7 +164,7 @@
   width: 5vw;
   border-radius: 15px;
   min-height: 10px;
-  background-color: yellow;
+  background-color: #fecc00;
   font-weight: bold;
   font-size: 18px;
   margin-top: 1vh;
@@ -279,7 +279,7 @@ body {
   width: 70%;
   height: 70%;
   background-color: black;
-  color: yellow;
+  color: #fecc00;
   border: 1px solid blue;
   display: flex;
   min-width: 400px;
@@ -323,7 +323,7 @@ body {
 
 .mail__footer .href__mail__footer{
   text-decoration: none;
-  color: yellow;
+  color: #fecc00;
 }
 
 @media screen and (max-width: 1400px) {
