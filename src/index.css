@@ -275,6 +275,7 @@ body {
   border: 1px solid blue;
   display: flex;
   min-width: 400px;
+  overflow: scroll;
 }
 
 .info {
@@ -337,5 +338,74 @@ body {
 
   .search__header {
     margin-left: 20vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main__content {
+   height: 60%;
+    width: 90%;
+    overflow: scroll;
+  }
+  .search__header {
+    height: auto;
+    margin-left: 80px;
+  }
+
+  .search__button {
+    height: 70px;
+    width: 120px;
+  }
+
+  .input_block {
+    height: 70px;
+    width: 220px;
+  }
+
+  .mail__footer {
+    font-size: 50px;
+  }
+
+  .menu-content{
+    height: 282px;
+    width: 220px;
+    overflow: hidden;
+  }
+
+  .menu-content div {
+    height: 70px;
+    width: auto;
+  }
+
+  .inky__menu-content .ghost__menu, .pinky__menu-content .ghost__menu,
+  .blinky__menu-content .ghost__menu, .clyde__menu-content .ghost__menu {
+  font-size: 40px;
+  }
+  .title__header {
+    display: none;
+  }
+
+  .title {
+   display: none;
+  }
+  .header {
+    height:170px;
+    min-width: 600px;
+  }
+
+  .blinky__ghost, .pinky__ghost {
+    display: none;
+  }
+
+  .header-wrapper__header{
+    height: 100px;
+    width: 220px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .menu {
+    height: 80px;
+    width: 220px;
+    margin-top: 0;
   }
 }
