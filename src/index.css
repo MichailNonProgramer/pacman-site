@@ -394,6 +394,11 @@ body {
     display: none;
   }
 
+  .inky__ghost,
+  .clyde__ghost {
+    display: block;
+  }
+
   .header-wrapper__header{
     height: 100px;
     width: 220px;
